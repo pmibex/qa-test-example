@@ -45,7 +45,6 @@ Define how test automation supports our QA goals:
 
 ## 4. 📂 Project Structure (Git)
 
-\`\`\`bash
 test/
 ├── unit/                # Developer unit tests
 ├── api/
@@ -56,7 +55,6 @@ test/
 └── ui/
     ├── login.spec.ts
     └── cart.spec.ts
-\`\`\`
 
 ---
 
