@@ -45,7 +45,7 @@ Define how test automation supports our QA goals:
 
 ## 4. 📂 Project Structure (Git)
 
-\`\`\`bash
+```bash
 test/
 ├── unit/                # Developer unit tests
 ├── api/
@@ -56,7 +56,7 @@ test/
 └── ui/
     ├── login.spec.ts
     └── cart.spec.ts
-
+```
 ---
 
 ## 5. 🚀 CI/CD Integration
@@ -69,7 +69,7 @@ test/
 | `nightly.yml` | 2 AM UTC | Full regression suite |
 
 📎 Sample config:
-\`\`\`yaml
+```yaml
 pipelines:
   branches:
     develop:
@@ -77,7 +77,7 @@ pipelines:
           name: Run API Tests
           script:
             - npm run api-test
-
+```
 ---
 
 ## 6. 📊 Reporting & Metrics
