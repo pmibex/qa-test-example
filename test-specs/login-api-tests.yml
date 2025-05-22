@@ -1,0 +1,25 @@
+suite: Login API Tests
+environment: staging
+auth: bearer
+tests:
+  - name: Successful login
+    method: POST
+    url: /api/login
+    body:
+      username: testuser
+      password: testpass
+    expect:
+      status: 200
+      json:
+        token: string
+        expires_in: number
+
+  - name: Expired token
+    method: GET
+    url: /api/protected
+    headers:
+      Authorization: Bearer expired_token
+    expect:
+      status: 401
+      json:
+        error: token_expired
