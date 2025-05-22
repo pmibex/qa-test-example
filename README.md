@@ -1,7 +1,7 @@
 
 # 🧪 QA Automation Strategy
 
-_Last updated: {{YYYY-MM-DD}} by {{Author}}_
+_Last updated: 2025-03-12 by Jeff_
 
 ---
 
